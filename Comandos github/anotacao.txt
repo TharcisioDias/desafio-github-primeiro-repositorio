@@ -1,0 +1,123 @@
+git init
+comando usado para iniciar um repositório
+
+git add .
+comando usado para que os arquivos não trackeados, comecem a ser trackeados pelo git
+
+git commit -m “sua mensagem”
+ou
+git commit (nome do arquivo) -m “sua mensagem”
+comando usado para salvar as informações
+
+git push
+quando finalizamos a funcionalidade, e queremos enviar para o repositório remoto (github) usamos o git push
+
+git pull
+queremos sincronizar nosso projeto com os arquivos que possui la no repositório remoto (github) usamos o git pull, ele ira baixar e sincronizar os arquivos com nosso projeto.
+
+
+git status
+Verificar pendencias
+
+git branch -m main
+criar a main principal
+
+git remote add origin (mais link do repositorio)
+adicionar repositorio no git bash
+
+git push -u origin main ou Master
+enviar main para o github
+
+git clone (mais url do diretorio do git) (secolocar ponto no final copia somente os arquivos)
+clonar diretorio no git hub
+
+git log
+acessar oque foi feito no projeto
+
+git rm (mais arquivo)
+remover arquivo
+
+git rm -r (diretorio)
+remover diretorio
+
+git checkout (mais arquivo)
+restaura arquivo original do github
+
+git reset - - hard origin/(nome da branch)
+reseta a branch local e atualiza com os dados do github(ação irreversivel) pega o ultimo commit que enviei para o github
+
+git branch
+lista todas as branch que estão no git
+
+git branch (e o nome da branch)
+para criar uma nova branch
+
+git checkout (mais nome da branch)
+para mudar de branch
+
+git checkout -b (mais nome da branch)
+cria e ja entra direto na branch
+
+git branch -d (mais nome da branch)
+para deletar a branch
+
+git merge (mais nome da branch)
+unir branch
+
+git stash
+volta para o ultimo commti do github
+
+git stash list
+ver stash que foram feiras 
+
+git stash apply (mais numero da stash)
+recuperando stash
+
+git stash show -p (mais numero da stash)
+pra ver oque tem na stash
+
+git tag -a (nome da tag ex: v1.0) -m “Primeira versao do sistema”(exemplo)
+uma maneira de marcar uma versão do seu projeto
+git tag
+ver as tag
+
+git tag show (mais descrição da tag)
+pra ver o que ha dentro da tag ( alterações)
+
+
+git checkout (mais a descrição da tag)
+para retornar para tag desejada
+
+
+git push origin (mais o nome da tag ex: v1.0)
+enviar tag para o github
+
+git push origin -- tags
+para enviar todas as tags
+
+ git push --set-upstream origin (nome da branch)
+para enviar uma branch especifica para o github
+
+git fetch -a
+para baixar todas branch que tem no github e nao tem no0 git(atualizar branch do git, puxarv as que estão no github)(caso não aparecer na colsunta da branch, trocar direto)
+
+git gc
+para dar mais performa-se para os arquivos, quando estiver lento o repositorio(não consigo ver os arquivos que ele apagou ou modificou)
+
+
+git shortlog
+ver todos os commit que foram feitos, inclusive de outros usuarios
+
+
+git diff ou git diff (mais a branch)
+compara os aquivos que estão no gi com os do git hub 
+
+git diff HEAD: (nome do arquivo)
+para comparar arquivos especificos do git e github
+
+git diff HEAD: /styles/(arquivo desejado)
+para comparar arquivo git e github  especifico em uma pasta
+
+
+git reflog
+exibe todos os detalhes precisos feitos nesse repositorio (tempo de expiração de 30 dias)
